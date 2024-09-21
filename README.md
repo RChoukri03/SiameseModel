@@ -8,6 +8,7 @@ The **dataloader** and **datagenerator** are specifically adapted to this task o
 
 The model can be trained on any image dataset, where the goal is to detect rotational transformations. The data is preprocessed to generate pairs of images (original and rotated), and the model is trained to minimize the contrastive loss between similar and dissimilar pairs.
 
+With  little work of adaptation, this project could be used for other tasks, such as detection of similar images.
 ## **Key Features**
 
 1. **Siamese Network with Attention**:
@@ -55,8 +56,4 @@ The training process involves:
 ### **4. Evaluation**
 
 During evaluation, the model compares pairs of images and calculates the Euclidean distance between their feature representations. If the distance is above a certain threshold, the model predicts that the images are dissimilar (rotated by 180 degrees), otherwise, they are considered similar (non-rotated).
-
-### **5. Adaptation for 180-Degree Rotation Detection**
-
-The **dataloader** and **datagenerator** are tailored specifically for the task of detecting whether one image is rotated by 180 degrees compared to another. The Siamese model is trained on these image pairs to learn this specific rotational relationship, making it highly effective for this task.
 
