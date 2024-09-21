@@ -2,10 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+croppedkits/*
+data/croppedkits/*
 # C extensions
 *.so
-
+*.ipynb
 # Distribution / packaging
 .Python
 build/
