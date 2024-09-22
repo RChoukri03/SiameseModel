@@ -57,3 +57,6 @@ The training process involves:
 
 During evaluation, the model compares pairs of images and calculates the Euclidean distance between their feature representations. If the distance is above a certain threshold, the model predicts that the images are dissimilar (rotated by 180 degrees), otherwise, they are considered similar (non-rotated).
 
+### **5. Next steps**
+
+After testing and using this model, we realized a flaw: when presented with two images that do not represent the same object, the model makes unpredictable predictions. Therefore, we need to add a third class for pairs of images that do not represent the same object. This way, the model will cover all possible cases.
